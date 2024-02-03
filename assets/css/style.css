@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: #fbe3e3;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+    grid-template-areas:
+        'nav nav nav nav nav'
+        'aside section  section section section'
+        'aside section  section section section'
+        'footer footer footer footer footer'
+}
+
+
+
+section {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: #fbe3e3;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+
+.card:hover {
+    transform: translate(10px);
+    background-color: pink;
+}
+
+footer {
+    background-color: #000000;
+    grid-area: footer;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+nav img {
+    width: 80px;
+    height: auto;
+
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ec9a9a;
+    text-align: center;
+    padding: 20px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+li:hover {
+    transition: 0.5s;
+    color: #ef5454;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+
+
+}
+
+aside {
+    grid-area: aside;
+    background-color: #fbe3e3;
+    padding-left: 10px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 20px;
+
+}
+
+aside li {
+    font-weight: lighter;
+}
+
+span {
+    text-align: center;
+    padding-left: 9px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+button {
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #ef5454;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ebdcdc;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+p {
+    padding-bottom: 20px;
+    font-weight: 300;
+}
