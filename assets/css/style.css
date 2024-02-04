@@ -8,13 +8,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-main {
     background-color: #fbe3e3;
     display: grid;
     gap: 10px;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto auto auto;
     grid-template-areas:
         'nav nav nav nav nav'
         'aside section  section section section'
